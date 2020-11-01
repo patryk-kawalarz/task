@@ -1,0 +1,10 @@
+<div *ngIf="person" class="cardContainer">
+    <picture>
+      <source media="(min-width: 636px)" srcset="{{person.image_md}}">
+      <source media="(min-width: 570px)" srcset="{{person.image_sm}}">
+      <source media="(min-width: 200px)" srcset="{{person.image_md}}">
+      <img class="cardImage" src="{{person.image_sm}}" />
+    </picture>
+</div>
+
+<div [person]="person" app-person-body></div>

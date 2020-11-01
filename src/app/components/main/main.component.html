@@ -1,0 +1,9 @@
+<div>
+  <h1>{{title}}</h1>
+
+  <div class="wrapper">
+    <div class="card" *ngFor="let person of persons">
+      <app-person [person]="person"></app-person>
+    </div>
+  </div>
+</div>

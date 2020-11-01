@@ -1,0 +1,58 @@
+.cardBody {
+  margin-bottom: 20px;
+  padding      : 5px;
+}
+@media (min-width: 570px) {
+  .cardBody {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 16px;
+
+    &.email {
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width: 800px) {
+  .cardBody {
+    padding: 25px;
+  }
+
+  p {
+    &.title {
+      font-size: 18px;
+    }
+
+    &.email {
+      font-size: 14px;
+    }
+  }
+}
+
+p {
+  padding: 0;
+  margin : 0;
+
+  &.title {
+    font-weight: 800;
+  }
+
+  &.email {
+    padding-top: clamp(10px, 5vw, 16px);
+
+    a {
+      text-decoration: none;
+      color          : #319fff;
+      font-weight    : 600;
+    }
+  }
+
+  &.phone {
+    a {
+      text-decoration: none;
+      color          : #000;
+    }
+  }
+}
